@@ -175,21 +175,36 @@ Untuk menilai performa model rekomendasi, digunakan tiga metrik utama:
 - **Precision@k**: Mengukur ketepatan rekomendasi.
 
   **Formula:**
-  Precision@k = (Jumlah item relevan yang direkomendasikan) / (Jumlah total rekomendasi (k))
+
+  $$
+  \text{Precision@k} = \frac{\text{Jumlah item relevan yang direkomendasikan}}{\text{Jumlah total rekomendasi (k)}}
+  $$
 
   Artinya, seberapa banyak dari rekomendasi yang diberikan benar-benar relevan.
+
+---
 
 - **Recall@k**: Mengukur kelengkapan rekomendasi.
 
   **Formula:**
-  Recall@k = (Jumlah item relevan yang direkomendasikan) / (Jumlah total item relevan yang seharusnya ditemukan)
+
+  $$
+  \text{Recall@k} = \frac{\text{Jumlah item relevan yang direkomendasikan}}{\text{Jumlah total item relevan yang seharusnya ditemukan}}
+  $$
 
   Artinya, seberapa banyak item relevan yang berhasil ditemukan oleh sistem dari semua yang seharusnya direkomendasikan.
+
+---
 
 - **Root Mean Square Error (RMSE)**: Digunakan untuk model Collaborative Filtering yang memprediksi nilai rating.
 
   **Formula:**
-  RMSE = sqrt( (1/n) * ∑(pred_i - true_i)^2 )
+
+  $$
+  RMSE = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} ( \hat{y}_i - y_i )^2 }
+  $$
+
+  Di mana \( \hat{y}_i \) adalah rating yang diprediksi dan \( y_i \) adalah rating sebenarnya.
 
   Semakin kecil nilai RMSE, semakin baik performa prediksi rating model.
 
