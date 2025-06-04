@@ -188,11 +188,7 @@ Untuk menilai performa model rekomendasi, digunakan tiga metrik utama:
 
   **Formula:**
 
-  $$
-  \text{Recall@k} = \frac{\text{Jumlah item relevan yang direkomendasikan}}{\text{Jumlah total item relevan yang seharusnya ditemukan}}
-  $$
-
-  Artinya, seberapa banyak item relevan yang berhasil ditemukan oleh sistem dari semua yang seharusnya direkomendasikan.
+  Recall@k = (Jumlah item relevan yang direkomendasikan) / (Jumlah total item relevan yang seharusnya ditemukan)
 
 ---
 
@@ -200,11 +196,9 @@ Untuk menilai performa model rekomendasi, digunakan tiga metrik utama:
 
   **Formula:**
 
-  $$
-  RMSE = \sqrt{ \frac{1}{n} \sum_{i=1}^{n} ( \hat{y}_i - y_i )^2 }
-  $$
+  RMSE = sqrt( (1/n) * Σ (ŷᵢ - yᵢ)² )
 
-  Di mana \( \hat{y}_i \) adalah rating yang diprediksi dan \( y_i \) adalah rating sebenarnya.
+  Di mana ŷᵢ adalah rating yang diprediksi dan yᵢ adalah rating sebenarnya.
 
   Semakin kecil nilai RMSE, semakin baik performa prediksi rating model.
 
