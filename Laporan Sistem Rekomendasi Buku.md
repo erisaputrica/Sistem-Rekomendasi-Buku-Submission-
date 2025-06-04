@@ -189,7 +189,7 @@ Untuk menilai performa model rekomendasi, digunakan tiga metrik utama:
   **Formula:**
 
   $$
-  \text{Recall@k} = \frac{\text{Jumlah item relevan yang direkomendasikan}}{\text{Jumlah total item relevan yang ditemukan}}
+  \text{Recall@k} = \frac{\text{Jumlah item relevan yang direkomendasikan}}{\text{Jumlah item seharusnya}}
   $$
 
   Artinya, seberapa banyak item relevan yang berhasil ditemukan oleh sistem dari semua yang seharusnya direkomendasikan.
